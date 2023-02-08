@@ -1,0 +1,235 @@
+{% extends 'frontend/partials/base.html' %} {% load static %} {% block title %}
+<title>{{site.name}} | Our Gallery</title>
+{% endblock title %}
+
+{% block extra_css %}
+<!-- <link rel="stylesheet" href="{% static 'frontend/css/gallery.css' %}"/> -->
+<style>
+  .title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 24px;
+  }
+  .filters {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+
+  .filters span {
+    margin: 4px 4px 0 0;
+    padding: 12px 26px;
+    border-radius: 24px;
+    background: #efefef;
+    border: 2px solid #eee;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+
+  .filters span:hover {
+    border: 2px solid #ddd;
+  }
+
+  .filters span.active,
+  .filters span.active:hover {
+    border-color: #000;
+    background: #000;
+    color: #fff;
+  }
+  .images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 16px;
+  }
+  .images .img {
+    height: 300px;
+  }
+  .images .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    /* cursor: pointer; */
+  }
+  .images .img.hide {
+    display: none;
+  }
+
+  /*  Responsive */
+  @media screen and (max-width: 1200px) {
+    .container {
+      max-width: 991px;
+    }
+    .images {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    .container {
+      max-width: 768px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .container {
+      max-width: 576px;
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    .container {
+      max-width: 350px;
+    }
+    .images {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .filters {
+      flex-wrap: wrap;
+    }
+  }
+
+  .container .images .img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: 0.2s linear;
+  }
+
+  .container .images .img:hover img {
+    transform: scale(1.2);
+  } 
+  
+</style>
+{% endblock extra_css %} 
+
+{% block banner %}
+<div
+  id="banner-area"
+  class="banner-area"
+  style="
+    background-image: url({%static 'frontend/images/banner/banner.four.png'%});
+  "
+>
+  <div class="banner-text">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="banner-heading">
+            <h1 class="banner-title">Gallery</h1>
+            <!--<ol class="breadcrumb">
+                        <li>Home</li>
+                        <li>News</li>
+                        <li><a href="#">News Single</a></li>
+                     </ol>-->
+          </div>
+        </div>
+        <!-- Col end -->
+      </div>
+      <!-- Row end -->
+    </div>
+    <!-- Container end -->
+  </div>
+  <!-- Banner text end -->
+</div>
+{% endblock banner %} 
+
+{% block content %}
+<section id="main-container" class="main-container">
+  <div class="container">
+    <div class="row">
+      <h2 class="title">Our Images</h2>
+      <!-- Col 15 end -->
+      <div class="filters">
+        <span class="active">All</span>
+        <span>Mobile</span>
+        <span>Desktop</span>
+        <span>Tablet</span>
+      </div>
+      <div class="images">
+        <div class="img">
+          <img
+            class="img-responsive"
+            src="{% static 'frontend/images/services/cgiar.jpg' %}"
+            alt=""
+          />
+        </div>
+        <div class="img">
+          <img
+            data-filter="mobile"
+            class="img-responsive"
+            src="{% static 'frontend/images/services/fao.jpg' %}"
+            alt=""
+          />
+        </div>
+        <div class="img">
+          <img
+            data-filter="mobile"
+            class="img-responsive"
+            src="{% static 'frontend/images/banner/banner.four.png' %}"
+            alt=""
+          />
+        </div>
+        <div class="img">
+          <img
+            data-filter="desktop"
+            class="img-responsive"
+            src="{% static 'frontend/images/banner/banner.four.png' %}"
+            alt=""
+          />
+        </div>
+        <div class="img">
+          <img
+            data-filter="desktop"
+            class="img-responsive"
+            src="{% static 'frontend/images/banner/banner.four.png' %}"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <!-- <div class="popup-img">
+        <span>&times;</span>
+        <img
+          class="img-responsive"
+          src="{% static 'frontend/images/services/cgiar.jpg' %}"
+          alt=""
+        />
+      </div> -->
+    </div>
+    <!-- Main row end -->
+  </div>
+
+  <!-- Conatiner end -->
+</section>
+
+{% endblock content %} {% block extra_javascript %}
+<script>
+  const filters = document.querySelectorAll(".filters span");
+  const images = document.querySelectorAll(".images .img img");
+
+  for (let filter of filters) {
+    filter.addEventListener("click", function () {
+      for (let i of filters) {
+        i.classList.remove("active");
+      }
+      filter.classList.add("active");
+
+      for (let image of images) {
+        image.parentElement.classList.remove("hide");
+      }
+
+      if (filter.innerHTML.toLowerCase() !== "all") {
+        for (let image of images) {
+          if (filter.innerHTML.toLowerCase() !== image.dataset.filter) {
+            image.parentElement.classList.add("hide");
+          }
+        }
+      }
+    });
+  }
+</script>
+{% endblock extra_javascript %}

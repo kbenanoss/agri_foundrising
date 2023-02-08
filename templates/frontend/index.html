@@ -1,0 +1,627 @@
+{% extends 'frontend/partials/base.html' %} 
+{% load static %} 
+{% block title %}
+  <title>{{site.name}} | Management Team</title>
+{% endblock title %}
+
+{% block content %} 
+{% include 'frontend/partials/carousel.html' %}
+
+<!-- <section class="call-to-action-box no-padding">
+			<div class="container">
+				<div class="action-style-box">
+					<div class="row">
+						<div class="col-md-10">
+							<div class="call-to-action-text">
+								<h3 class="action-title">We understand your needs on construction</h3>
+							</div>
+						</div> -- Col end --
+						<div class="col-md-2">
+							<div class="call-to-action-btn">
+								<a class="btn btn-dark" href="#">Request Quote</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section> -->
+<section id="ts-features" class="ts-features">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-xs-12">
+        <div class="ts-intro">
+          <!--<h2 class="into-title">About Us</h2>-->
+          <h3 class="into-sub-title">We deliver landmark projects</h3>
+          <p>
+            Food for All International is a Not-For-Profit Agricultural
+            Development, Non-Governmental Organization (NGO) set up to support
+            farmers, enhance agricultural production and help improve food
+            security and alleviate poverty. FFAI was established in 2002 and is
+            registered with the Corporate Affairs Commission, Abuja. Today FFAI
+            has worked with farmers in almost all parts of the Niger Delta
+            addressing critical components in the agricultural sector,
+            strengthening agricultural productivity.
+          </p>
+        </div>
+        <!-- Intro box end -->
+
+        <div class="gap-20"></div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="ts-service-box">
+              <span class="ts-service-icon">
+                <i class="fa fa-trophy"></i>
+              </span>
+              <div class="ts-service-box-content">
+                <h3 class="service-box-title">We've Repution for Excellence</h3>
+              </div>
+            </div>
+            <!-- Service 1 end -->
+          </div>
+          <!-- col end -->
+
+          <div class="col-md-6">
+            <div class="ts-service-box">
+              <span class="ts-service-icon">
+                <i class="fa fa-sliders"></i>
+              </span>
+              <div class="ts-service-box-content">
+                <h3 class="service-box-title">We Build Partnerships</h3>
+              </div>
+            </div>
+            <!-- Service 2 end -->
+          </div>
+          <!-- col end -->
+        </div>
+        <!-- Content row 1 end -->
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="ts-service-box">
+              <span class="ts-service-icon">
+                <i class="fa fa-thumbs-up"></i>
+              </span>
+              <div class="ts-service-box-content">
+                <h3 class="service-box-title">Guided by Commitment</h3>
+              </div>
+            </div>
+            <!-- Service 1 end -->
+          </div>
+          <!-- col end -->
+
+          <div class="col-md-6">
+            <div class="ts-service-box">
+              <span class="ts-service-icon">
+                <i class="fa fa-users"></i>
+              </span>
+              <div class="ts-service-box-content">
+                <h3 class="service-box-title">A Team of Professionals</h3>
+              </div>
+            </div>
+            <!-- Service 2 end -->
+          </div>
+          <!-- col end -->
+        </div>
+        <!-- Content row 1 end -->
+      </div>
+      <!-- Col end -->
+
+      <div class="col-md-6 col-xs-12">
+        <h3 class="into-sub-title">Our Values</h3>
+        <!--<p>Minim Austin 3 wolf moon scenester aesthetic, umami odio pariatur bitters. Pop-up occaecat taxidermy
+							street art, tattooed beard literally.</p>-->
+        <div class="panel-group" id="accordion">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a
+                  data-toggle="collapse"
+                  data-parent="#accordion"
+                  href="#collapseOne"
+                  >Our Vision</a
+                >
+              </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in">
+              <div class="panel-body">
+                <p>
+                  Establishment of alternative economy in the oil-rich Niger
+                  delta region of Nigeria through sustainable Agricultural
+                  development and commercialization. Niger Delta is a region
+                  where poverty stares all in the face in the midst of seeming
+                  plenty, and opportunities are few in the oil industry, the
+                  alternative is Agriculture.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!--/ Panel 1 end-->
+
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a
+                  data-toggle="collapse"
+                  class="collapsed"
+                  data-parent="#accordion"
+                  href="#collapseTwo"
+                  >Our Mission</a
+                >
+              </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse">
+              <div class="panel-body">
+                <p>
+                  To improve the quality of life for rural farmers through the
+                  production, multiplication and distribution of high quality
+                  seeds, and also through the transfer of proven suitable and
+                  adaptable Agricultural technology in the Niger delta region of
+                  Nigeria and beyond.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!--/ Panel 2 end-->
+
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a
+                  data-toggle="collapse"
+                  class="collapsed"
+                  data-parent="#accordion"
+                  href="#collapseThree"
+                  >Our Trademark</a
+                >
+              </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse">
+              <div class="panel-body">
+                <p>Service to farmers in remote and difficult environment.</p>
+              </div>
+            </div>
+          </div>
+          <!--/ Panel 3 end-->
+
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a
+                  data-toggle="collapse"
+                  class="collapsed"
+                  data-parent="#accordion"
+                  href="#collapseFour"
+                  >Our Strategy</a
+                >
+              </h4>
+            </div>
+            <div id="collapseFour" class="panel-collapse collapse">
+              <div class="panel-body">
+                <p>
+                  Partnership with private individuals, corporate bodies,
+                  specialized agencies including research bodies and
+                  international agencies.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!--/ Panel 4 end-->
+        </div>
+        <!--/ Accordion end -->
+      </div>
+      <!-- Col end -->
+    </div>
+    <!-- Row end -->
+  </div>
+  <!-- Container end -->
+</section>
+<!-- Feature are end -->
+
+<section id="facts" class="facts-area dark-bg">
+  <div class="container">
+    <div class="row">
+      <div class="facts-wrapper">
+        <div class="col-sm-3 ts-facts">
+          <div class="ts-facts-img">
+            <img src="{% static 'frontend/images/icon-image/trained.farmers.png' %}" alt="" />
+          </div>
+          <div class="ts-facts-content">
+            <h2 class="ts-facts-num">
+              <span class="counterUp" data-count="10003">0</span>
+            </h2>
+            <h3 class="ts-facts-title">Trained Farmers</h3>
+          </div>
+        </div>
+        <!-- Col end -->
+
+        <div class="col-sm-3 ts-facts">
+          <div class="ts-facts-img">
+            <img src="{% static 'frontend/images/icon-image/staff.member.png' %}" alt="" />
+          </div>
+          <div class="ts-facts-content">
+            <h2 class="ts-facts-num">
+              <span class="counterUp" data-count="47">0</span>
+            </h2>
+            <h3 class="ts-facts-title">Staff Members</h3>
+          </div>
+        </div>
+        <!-- Col end -->
+
+        <div class="col-sm-3 ts-facts">
+          <div class="ts-facts-img">
+            <img src="{% static 'frontend/images/icon-image/hours.of.work.png' %}" alt="" />
+          </div>
+          <div class="ts-facts-content">
+            <h2 class="ts-facts-num">
+              <span class="counterUp" data-count="131742">0</span>
+            </h2>
+            <h3 class="ts-facts-title">Hours of Work</h3>
+          </div>
+        </div>
+        <!-- Col end -->
+
+        <div class="col-sm-3 ts-facts">
+          <div class="ts-facts-img">
+            <img src="{% static 'frontend/images/icon-image/locations.experience.png' %}" alt="" />
+          </div>
+          <div class="ts-facts-content">
+            <h2 class="ts-facts-num">
+              <span class="counterUp" data-count="6">0</span>
+            </h2>
+            <h3 class="ts-facts-title">Locations Experience</h3>
+          </div>
+        </div>
+        <!-- Col end -->
+      </div>
+      <!-- Facts end -->
+    </div>
+    <!--/ Content row end -->
+  </div>
+  <!--/ Container end -->
+</section>
+<!-- Facts end -->
+
+<section id="ts-service-area" class="ts-service-area">
+  <div class="container">
+    <div class="row text-center">
+      <h2 class="section-title">We've Come A Long Way</h2>
+      <h3 class="section-sub-title">Achievements</h3>
+    </div>
+    <!--/ Title row end -->
+
+    <div class="row">
+      <div class="col-md-4">
+        <div class="ts-service-box">
+          <div class="ts-service-box-img pull-left">
+            <img src="{% static 'frontend/images/icon-image/small.scale.farm.png' %}" alt="" />
+          </div>
+          <div class="ts-service-box-info">
+            <h3 class="service-box-title"><a href="#">Small Scale Farms</a></h3>
+            <p>Establishment of large and small scale farms.</p>
+          </div>
+        </div>
+        <!-- Service 1 end -->
+
+        <div class="ts-service-box">
+          <div class="ts-service-box-img pull-left">
+            <img src="{% static 'frontend/images/icon-image/agricultural.training.png' %}" alt="" />
+          </div>
+          <div class="ts-service-box-info">
+            <h3 class="service-box-title">
+              <a href="#">Agricultural Training</a>
+            </h3>
+            <p>Training on modern agricultural crop/livestock production.</p>
+            <!--  and management -->
+          </div>
+        </div>
+        <!-- Service 2 end -->
+
+        <div class="ts-service-box">
+          <div class="ts-service-box-img pull-left">
+            <img src="{% static 'frontend/images/icon-image/youth.empowerment.png' %}" alt="" />
+          </div>
+          <div class="ts-service-box-info">
+            <h3 class="service-box-title"><a href="#">Youth Empowerment</a></h3>
+            <p>Successful empowered youth on agricultural business.</p>
+          </div>
+        </div>
+        <!-- Service 3 end -->
+      </div>
+      <!-- Col end -->
+
+      <div class="col-md-4 text-center">
+        <img
+          class="service-center-img img-responsive"
+          src="{% static 'frontend/images/services/service.center.png' %}"
+          alt=""
+        />
+      </div>
+      <!-- Col end -->
+
+      <div class="col-md-4">
+        <div class="ts-service-box">
+          <div class="ts-service-box-img pull-left">
+            <img src="{% static 'frontend/images/icon-image/national.farm.produce.png' %}" alt="" />
+          </div>
+          <div class="ts-service-box-info">
+            <h3 class="service-box-title">
+              <a href="#">National Farm Produce</a>
+            </h3>
+            <p>
+              We have contributed a reasonable quota to the national farm
+              produce.
+            </p>
+          </div>
+        </div>
+        <!-- Service 4 end -->
+
+        <div class="ts-service-box">
+          <div class="ts-service-box-img pull-left">
+            <img src="{% static 'frontend/images/icon-image/provision.of.jobs.png' %}" alt="" />
+          </div>
+          <div class="ts-service-box-info">
+            <h3 class="service-box-title"><a href="#">Provision of Jobs</a></h3>
+            <p>Provision of jobs that has drastically reduce crime rate.</p>
+          </div>
+        </div>
+        <!-- Service 5 end -->
+
+        <div class="ts-service-box">
+          <div class="ts-service-box-img pull-left">
+            <img src="{% static 'frontend/images/icon-image/data.information.png' %}" alt="" />
+          </div>
+          <div class="ts-service-box-info">
+            <h3 class="service-box-title">
+              <a href="#">Data and Information</a>
+            </h3>
+            <p>Provide information necessary to setup and improve farms.</p>
+          </div>
+        </div>
+        <!-- Service 6 end -->
+      </div>
+      <!-- Col end -->
+    </div>
+    <!-- Content row end -->
+  </div>
+  <!--/ Container end -->
+</section>
+<!-- Service end -->
+<section class="subscribe no-padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <div class="subscribe-call-to-acton">
+          <h3>Can We Help?</h3>
+          <h4>(+234) 817.193.3922</h4>
+        </div>
+      </div>
+      <!-- Col end -->
+
+      <div class="col-md-8 col-sm-12 col-xs-12">
+        <div class="ts-newsletter">
+          <div class="newsletter-introtext">
+            <h4 class="quotes">
+              Agriculture is our wisest pursuit, because it will in the end
+              contribute most to real wealth, good morals, and happiness.
+              <span class="quotename">- Thomas Jefferson.</span>
+            </h4>
+          </div>
+
+          <!--<div class="newsletter-form">
+								<form action="#" method="post">
+									<div class="form-group">
+										<input type="email" name="email" id="newsletter-form-email" class="form-control form-control-lg"
+											placeholder="Your Email Here" autocomplete="off">
+									</div>
+								</form>
+							</div>-->
+        </div>
+        <!-- Newsletter end -->
+      </div>
+      <!-- Col end -->
+    </div>
+    <!-- Content row end -->
+  </div>
+  <!--/ Container end -->
+</section>
+<!--/ News end -->
+
+<section id="news" class="news">
+  <div class="container">
+    <div class="row text-center">
+      <h2 class="section-title">Work of Excellence</h2>
+      <h3 class="section-sub-title">Recent Projects</h3>
+    </div>
+    <!--/ Title row end -->
+
+    <div class="row">
+      <div class="col-md-4 col-xs-12">
+        <div class="latest-post">
+          <div class="latest-post-media">
+            <iframe
+              width="370"
+              height="245"
+              src="https://www.youtube.com/embed/v6LrP-cU_Xk"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="post-body">
+            <h4 class="post-title">
+              <a
+                href="https://ffai-ngo.org/blog/an-interview-with-one-of-our-beneficiaries/"
+              >
+                An Interview With One of Our Beneficiaries. </a
+              ><!-- FFAI/FMARD Tractor Hiring Scheme for Farmers in Niger Delta. | Interview With a Farmer Who Was One Of The Trainee We Conducted. -->
+            </h4>
+            <div class="latest-post-meta">
+              <span class="post-item-date">
+                <i class="fa fa-clock-o"></i> May 19, 2020<!--December 20, 2019-->
+              </span>
+            </div>
+          </div>
+        </div>
+        <!-- Latest post end -->
+      </div>
+      <!-- 1st post col end -->
+      <div class="col-md-4 col-xs-12">
+        <div class="latest-post">
+          <div class="latest-post-media">
+            <a href="#" class="latest-post-img">
+              <!--<img class="img-responsive" src="images/news/tractor.hiring.scheme.jpg" alt="img">-->
+              <img
+                class="img-responsive"
+                src="{% static 'frontend/images/employment.workshop.jpg' %}"
+                alt="img"
+              />
+            </a>
+          </div>
+          <div class="post-body">
+            <h4 class="post-title">
+              <a
+                href="https://ffai-ngo.org/blog/employment-generation-workshop-organized-by-ffai/">
+                Employment Generation Workshop organized by FFAI </a><!-- FFAI/FMARD Tractor Hiring Scheme for Farmers in Niger Delta. | Interview With a Farmer Who Was One Of The Trainee We Conducted. -->
+            </h4>
+            <div class="latest-post-meta">
+              <span class="post-item-date">
+                <i class="fa fa-clock-o"></i> May 19, 2020<!--December 20, 2019-->
+              </span>
+            </div>
+          </div>
+        </div>
+        <!-- Latest post end -->
+      </div>
+      <!-- 1st post col end -->
+      <div class="col-md-4 col-xs-12">
+        <div class="latest-post">
+          <div class="latest-post-media">
+            <a href="#" class="latest-post-img">
+              <!--<img class="img-responsive" src="images/news/tractor.hiring.scheme.jpg" alt="img">-->
+              <img
+                class="img-responsive"
+                src="{% static 'frontend/images/training.jpg' %}"
+                alt="img"
+              />
+            </a>
+          </div>
+          <div class="post-body">
+            <h4 class="post-title">
+              <a
+                href="https://ffai-ngo.org/blog/training-of-extension-agents-2020/"
+              >
+                Training of Extension Agents 2020 </a
+              ><!-- FFAI/FMARD Tractor Hiring Scheme for Farmers in Niger Delta. | Interview With a Farmer Who Was One Of The Trainee We Conducted. -->
+            </h4>
+            <div class="latest-post-meta">
+              <span class="post-item-date">
+                <i class="fa fa-clock-o"></i> May 17, 2020<!--December 20, 2019-->
+              </span>
+            </div>
+          </div>
+        </div>
+        <!-- Latest post end -->
+      </div>
+      <!-- 1st post col end -->
+
+      <!--<div class="col-md-4 col-xs-12">
+						<div class="latest-post">
+							<div class="latest-post-media">
+								<a href="#" class="latest-post-img">
+									<img class="img-responsive" src="images/news/empowerment.generation.workshop.jpg" alt="img">
+								</a>
+							</div>
+							<div class="post-body">
+								<h4 class="post-title">
+									<a href="#">Employment Generation Workshop Organized by FFAI at Ukpaja, Ubiaja.</a>
+								</h4>
+								<div class="latest-post-meta">
+									<span class="post-item-date">
+										<i class="fa fa-clock-o"></i> January 17, 2020
+									</span>
+								</div>
+							</div>
+						</div>	-- Latest post end --
+					</div> -- 2nd post col end -->
+
+      <!--<div class="col-md-4 col-xs-12">
+						<div class="latest-post">
+							<div class="latest-post-media">
+								<a href="#" class="latest-post-img">
+									<img class="img-responsive" src="images/news/tractor.hiring.enterprise.jpg" alt="img">
+								</a>
+							</div>
+							<div class="post-body">
+								<h4 class="post-title">
+								<a href="#">FFAI Launches Tractor Hiring Enterprise in Edo State</a>
+								</h4>
+								<div class="latest-post-meta">
+									<span class="post-item-date">
+										<i class="fa fa-clock-o"></i> February 13, 2020
+									</span>
+								</div>
+							</div>
+						</div> -- Latest post end --
+					</div> -- 3rd post col end -->
+    </div>
+    <!--/ Content row end -->
+
+    <div class="general-btn text-center">
+      <a class="btn btn-primary" href="blog/index.html">See All Posts</a>
+    </div>
+  </div>
+  <!--/ Container end -->
+</section>
+{% endblock content %}
+
+{% block extra_javascript %} 
+<script>
+  console.log('hello world')
+
+  const counter = document.getElementById('counter')
+  let counterVal = parseInt(counter.textContent)
+
+  let staffSize = 0
+  const updateTime =  1000
+  const tresh = 300
+  counted = false
+  
+  const runCounter = () => {
+    window.addEventListener('scroll', e=>{
+    let positon = window.scrollY
+    if (position > tresh && !counted) {
+      counted = true
+
+      const runCount = setInterval(()=>{
+      console.log('hello')
+      if (counterVal < staffSize) {
+        counterVal++
+        counter.textContent = counterVal
+      } else {
+            clearInterval(runCount)
+      }
+    }, updateTime)
+    }
+  })
+  }
+
+  $.ajax({
+    type: 'GET',
+    url: '/',
+    success: function(response){
+      staffSize = response.staff_count
+      runCounter()
+    },
+    error: function(error){
+      console.log(error)
+      
+    }
+  })
+  
+
+  
+
+  
+</script>
+{% endblock extra_javascript %}

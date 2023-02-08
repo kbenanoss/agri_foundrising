@@ -1,0 +1,149 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <head>
+    <!-- Basic Page Needs
+	================================================== -->
+    <meta charset="utf-8" />
+
+    {% block title %}
+    {% endblock title %}
+
+    <!-- Mobile Specific Metas
+	================================================== -->
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <meta
+      name="description"
+      content="You are Welcome to Food for All International, a non-governmental institution supporting farmers and other small-scale agricultural firms in Nigeria."
+    />
+
+    <!-- CSS
+	================================================== -->
+    {% block css %} 
+    {% block extra_css %} 
+    {% endblock extra_css %}
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="{% static 'frontend/css/bootstrap.min.css'%}"
+    />
+    <!-- Template styles-->
+    <link rel="stylesheet" href="{% static 'frontend/css/style.css' %}" />
+    <!-- Responsive styles-->
+    <link rel="stylesheet" href="{% static 'frontend/css/responsive.css' %}" />
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="{% static 'frontend/css/font-awesome.min.css' %}"
+    />
+    <!-- Animation -->
+    <link rel="stylesheet" href="{% static 'frontend/css/animate.css' %}" />
+    <!-- Owl Carousel -->
+    <link
+      rel="stylesheet"
+      href="{% static 'frontend/css/owl.carousel.min.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'frontend/css/owl.theme.default.min.css' %}"
+    />
+    <!-- Colorbox -->
+    <link rel="stylesheet" href="{% static 'frontend/css/colorbox.css' %}" />
+    {% endblock css %}
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="body-inner">
+      {% block topbar %}
+      {% include 'frontend/partials/topbar.html' %} 
+      {% endblock topbar%}
+      <!--/ Topbar end -->
+
+      <!-- Header start -->
+      {% block header %} 
+      {% include 'frontend/partials/header.html' %} 
+      {% endblock header %}
+      <!--/ Header end -->
+
+      <!-- Carousel -->
+      {% block carousel %} 
+      {% endblock carousel %}
+      <!--/ Carousel end -->
+      {% block banner %} 
+      {% endblock banner %}
+
+      {% block content %} 
+      {%endblock content %} 
+      {% block footer %} 
+      {% include 'frontend/partials/footer.html' %} 
+      {% endblock footer %}
+      <!-- Footer end -->
+
+      <!-- Javascript Files
+	================================================== -->
+      {% block javascript %}
+
+      <!-- initialize jQuery Library -->
+      <script
+        type="text/javascript"
+        src="{% static 'frontend/js/jquery.js' %}"
+      ></script>
+      <!-- Bootstrap jQuery -->
+      <script
+        type="text/javascript"
+        src="{% static 'frontend/js/bootstrap.min.js' %}"
+      ></script>
+      <!-- Owl Carousel -->
+      <script
+        type="text/javascript"
+        src="{% static 'frontend/js/owl.carousel.min.js' %}"
+      ></script>
+      <!-- Color box -->
+      <script
+        type="text/javascript"
+        src="{% static 'frontend/js/jquery.colorbox.js' %}"
+      ></script>
+      <!-- Isotope -->
+      <script
+        type="text/javascript"
+        src="{% static 'frontend/js/isotope.js' %}"
+      ></script>
+      <script
+        type="text/javascript"
+        src="{% static 'frontend/js/ini.isotope.js' %}"
+      ></script>
+
+      <!-- Google Map API Key-->
+      <script
+        type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&amp;libraries=places"
+      ></script>
+      <!-- Google Map Plugin-->
+      <script
+        type="text/javascript"
+        src="{% static 'frontend/js/gmap3.js' %}"
+      ></script>
+
+      {% block extra_javascript %} 
+      {% endblock extra_javascript %}
+      <!-- Template custom -->
+      <script
+        type="text/javascript"
+        src="{% static 'frontend/js/custom.js' %}"
+      ></script>
+      {% endblock javascript %}
+    </div>
+    <!-- Body inner end -->
+  </body>
+</html>

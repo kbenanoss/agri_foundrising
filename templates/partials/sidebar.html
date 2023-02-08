@@ -1,0 +1,246 @@
+{% load static %}
+
+{% load active_link_tags %}
+{% block sidebar %}
+
+            <!-- ========== Left Sidebar Start ========== -->
+            <div class="vertical-menu">
+
+                <div data-simplebar class="h-100">
+                    
+                    <!--- Sidemenu -->
+                    <div id="sidebar-menu">
+                        {% if user.user_type == "1" %}
+                        <!-- Left Menu Start -->
+                            <ul class="metismenu list-unstyled" id="side-menu">
+                                <li class="menu-title">Menu</li>
+
+
+                                <li>
+                                    <a href="{% url 'admin_dashboard' %}" class="waves-effect">
+                                        <i class="mdi mdi-home-variant-outline"></i><span
+                                            class="badge rounded-pill bg-primary float-end">3</span>
+                                        <span>Dashboard</span>
+                                    </a>
+                                </li>
+
+                                <li class="menu-title">Users</li>
+
+                                <li class="{% active_link 'view_staff' 'active' %}">
+                                    <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                        <i class="ri-team-fill"></i>
+                                        <span>Staffs</span>
+                                    </a>
+                                    <ul class="sub-menu" aria-expanded="false">
+                                        <li class="{% active_link 'view_staff' 'active' %}">
+                                            <a href="{% url 'view_staff' %}" class="waves-effect">
+                                                <i class="ri-eye-line"></i>
+                                                <span>View staffs</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="{% url 'add_staff' %}" class="waves-effect">
+                                                <i class="ri-user-add-line"></i>
+                                                <span>Add staffs</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                        <i class="ri-team-fill"></i>
+                                        <span>Members</span>
+                                    </a>
+                                    <ul class="sub-menu" aria-expanded="false">
+                                        <li>
+                                            <a href="{% url 'view_member' %}" class="waves-effect">
+                                                <i class="ri-eye-line"></i>
+                                                <span>View members</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="{% url 'add_member' %}" class="waves-effect">
+                                                <i class="ri-user-add-line"></i>
+                                                <span>Add members</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="menu-title">Pages</li>
+
+                                <li>
+                                <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                    <i class="mdi mdi-account-circle-outline"></i>
+                                    <span>Website Pages</span>
+                                </a>
+                                    <ul class="sub-menu" aria-expanded="false">
+                                        <li><a href="{% url 'backend_home_page' %}">Home Page</a></li>
+                                        <li><a href="#">About Page</a></li>
+                                        <li><a href="#">Management Team</a></li>
+                                        <li><a href="#">Our Colaborators</a></li>
+                                        <li><a href="#">What We Do</a></li>
+                                        <li><a href="#">Achievements</a></li>
+                                        <li><a href="#">Our Gallery</a></li>
+                                        <li><a href="#">Contact Us</a></li>
+                                        <li><a href="#">Blog Page</a></li>
+                                    </ul>
+                                </li>
+
+
+                                <li>
+                                    <a href="{% url 'add_footer_settings' %}" class="waves-effect">
+                                        <!-- <i class="mdi mdi-home-variant-outline"></i> -->
+                                        <i class="ri-settings-2-line"></i>
+                                        <span>Footer Settings</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'site_settings' %}" class="waves-effect">
+                                        <!-- <i class="mdi mdi-home-variant-outline"></i> -->
+                                        <i class="ri-settings-2-line"></i>
+                                        <span>Settings</span>
+                                    </a>
+                                </li>
+
+                            
+                            </ul>
+                        {% elif user.user_type == "2" %}
+                            <ul class="metismenu list-unstyled" id="side-menu">
+                                <li class="menu-title">Menu</li>
+
+
+                                <li>
+                                    <a href="{% url 'admin_dashboard' %}" class="waves-effect">
+                                        <i class="mdi mdi-home-variant-outline"></i><span
+                                            class="badge rounded-pill bg-primary float-end">3</span>
+                                        <span>Dashboard</span>
+                                    </a>
+                                </li>
+
+                                <li class="menu-title">Users</li>
+
+                                <!-- <li class="{% active_link 'view_staff' 'active' %}">
+                                    <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                        <i class="ri-team-fill"></i>
+                                        <span>Staffs</span>
+                                    </a>
+                                    <ul class="sub-menu" aria-expanded="false">
+                                        <li class="{% active_link 'view_staff' 'active' %}">
+                                            <a href="{% url 'view_staff' %}" class="waves-effect">
+                                                <i class="ri-eye-line"></i>
+                                                <span>View staffs</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="{% url 'add_staff' %}" class="waves-effect">
+                                                <i class="ri-user-add-line"></i>
+                                                <span>Add staffs</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li> -->
+
+                                <li>
+                                    <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                        <i class="ri-team-fill"></i>
+                                        <span>Members</span>
+                                    </a>
+                                    <ul class="sub-menu" aria-expanded="false">
+                                        <li>
+                                            <a href="{% url 'view_member' %}" class="waves-effect">
+                                                <i class="ri-eye-line"></i>
+                                                <span>View members</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="{% url 'add_member' %}" class="waves-effect">
+                                                <i class="ri-user-add-line"></i>
+                                                <span>Add members</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+
+                                <li>
+                                <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                    <i class="mdi mdi-account-circle-outline"></i>
+                                    <span>Website Pages</span>
+                                </a>
+                                    <ul class="sub-menu" aria-expanded="false">
+                                        <li><a href="#">Home Page</a></li>
+                                        <li><a href="#">About Page</a></li>
+                                        <li><a href="#">Management Team</a></li>
+                                        <li><a href="#">Our Colaborators</a></li>
+                                        <li><a href="#">What We Do</a></li>
+                                        <li><a href="#">Achievements</a></li>
+                                        <li><a href="#">Our Gallery</a></li>
+                                        <li><a href="#">Contact Us</a></li>
+                                        <li><a href="#">Blog Page</a></li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <a href="{% url 'footer_settings' %}" class="waves-effect">
+                                        <!-- <i class="mdi mdi-home-variant-outline"></i> -->
+                                        <i class="ri-settings-2-line"></i>
+                                        <span>Footer Settings</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'settings' %}" class="waves-effect">
+                                        <!-- <i class="mdi mdi-home-variant-outline"></i> -->
+                                        <i class="ri-settings-2-line"></i>
+                                        <span>Settings</span>
+                                    </a>
+                                </li>
+
+
+                            
+                            </ul>
+                        {% else %}
+                            <ul class="metismenu list-unstyled" id="side-menu">
+                                <li class="menu-title">Menu</li>
+
+
+                                <li>
+                                    <a href="{% url 'dashboard' %}" class="waves-effect">
+                                        <i class="mdi mdi-home-variant-outline"></i><span
+                                            class="badge rounded-pill bg-primary float-end">3</span>
+                                        <span>Dashboard</span>
+                                    </a>
+                                </li>
+
+                               
+
+                                <li class="menu-title">Pages</li>
+
+                                <li>
+                                <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                    <i class="mdi mdi-account-circle-outline"></i>
+                                    <span>Website Pages</span>
+                                </a>
+                                    <ul class="sub-menu" aria-expanded="false">
+                                        <li><a href="#">Home Page</a></li>
+                                        <li><a href="#">About Page</a></li>
+                                        <li><a href="#">Management Team</a></li>
+                                        <li><a href="#">Our Colaborators</a></li>
+                                        <li><a href="#">What We Do</a></li>
+                                        <li><a href="#">Achievements</a></li>
+                                        <li><a href="#">Our Gallery</a></li>
+                                        <li><a href="#">Contact Us</a></li>
+                                        <li><a href="#">Blog Page</a></li>
+                                    </ul>
+                                </li>
+                            
+                            </ul>
+                        {% endif %}
+                    </div>
+                    <!-- Sidebar -->
+                </div>
+            </div>
+            <!-- Left Sidebar End -->
+{% endblock sidebar %}
+    

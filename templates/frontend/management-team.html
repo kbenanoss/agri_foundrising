@@ -1,0 +1,203 @@
+{% extends 'frontend/partials/base.html' %} 
+{% load static %} 
+
+{% block title %}
+<title>{{site.name}} | Management Team</title>
+{% endblock title %} 
+
+{% block content %}
+
+<div
+  id="banner-area"
+  class="banner-area"
+  style="background-image: url({% static 'frontend/images/banner/banner.three.png' %});">
+  <div class="banner-text">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="banner-heading">
+            <h1 class="banner-title">Management Team</h1>
+            <!--<ol class="breadcrumb">
+                        <li>Home</li>
+                        <li>News</li>
+                        <li><a href="#">News Single</a></li>
+                     </ol>-->
+          </div>
+        </div>
+        <!-- Col end -->
+      </div>
+      <!-- Row end -->
+    </div>
+    <!-- Container end -->
+  </div>
+  <!-- Banner text end -->
+</div>
+<!-- Banner area end -->
+
+<section id="main-container" class="main-container">
+  <div class="container">
+    <div class="row text-center">
+      <h3 class="section-sub-title">Our Leaderships</h3>
+    </div>
+    <!--/ Title row end -->
+
+    <div class="row">
+      <div class="col-md-3"></div>
+      <!-- Col end -->
+
+      <div class="col-md-3">
+        <div class="ts-team-wrapper">
+          <div class="team-img-wrapper">
+            <img
+              alt=""
+              src="{% static 'frontend/images/team/avatar.png' %}"
+              class="img-responsive"
+            />
+          </div>
+          <div class="ts-team-content-classic">
+            <h3 class="ts-name">Dr. S.E.A. Akele</h3>
+            <p class="ts-designation">President/Chief Executive Officer</p>
+            <p class="ts-description">
+              Dr. S.E.A Akele holds a PhD in Seed Technology, M. Sc in
+              Silviculture and was the Head, Green River Project of Nigerian
+              Agip Oil Company for over 25 years and later the pioneer Corporate
+              Sustainability Manager of Eni-Group of Companies in Nigeria, with
+              vast experience in Community Development, Seed Production and
+              Extension Services.
+            </p>
+            <div class="team-social-icons">
+              <a target="_blank" href="#"><i class="fa fa-facebook"></i></a>
+              <a target="_blank" href="#"><i class="fa fa-linkedin"></i></a>
+              <a target="_blank" href="#"><i class="fa fa-twitter"></i></a>
+            </div>
+            <!--/ social-icons-->
+          </div>
+        </div>
+        <!--/ Team wrapper 1 end -->
+      </div>
+      <!-- Col end -->
+
+      <div class="col-md-3">
+        <div class="ts-team-wrapper">
+          <div class="team-img-wrapper">
+            <img
+              alt=""
+              src="{% static 'frontend/images/team/avatar.png' %}"
+              class="img-responsive"
+            />
+          </div>
+          <div class="ts-team-content-classic">
+            <h3 class="ts-name">Prof. Chris Chinaka</h3>
+            <p class="ts-designation">Project Co-ordinator</p>
+            <p class="ts-description">
+              Prof. C. Chinaka holds a PhD in Agronomy. He is also a member of
+              the Board of trustees of the organization.
+            </p>
+            <div class="team-social-icons">
+              <a target="_blank" href="#"><i class="fa fa-facebook"></i></a>
+              <a target="_blank" href="#"><i class="fa fa-linkedin"></i></a>
+              <a target="_blank" href="#"><i class="fa fa-twitter"></i></a>
+            </div>
+            <!--/ social-icons-->
+          </div>
+        </div>
+        <!--/ Team wrapper 2 end -->
+      </div>
+      <!-- Col end -->
+
+      <div class="col-md-3"></div>
+      <!-- Col end -->
+    </div>
+    <!-- Content row 1 end -->
+
+    <div class="gap-40"></div>
+
+    <div class="row">
+      <div class="col-md-4">
+        <div class="ts-team-wrapper">
+          <div class="team-img-wrapper">
+            <img
+              alt=""
+              src="{% static 'frontend/images/team/avatar.png' %}"
+              class="img-responsive"
+            />
+          </div>
+          <div class="ts-team-content-classic">
+            <h3 class="ts-name">Chief Prof. W.I. Bell-gam</h3>
+            <p class="ts-designation">Director of Finance</p>
+            <p class="ts-description">
+              Prof. W.I. Bell-Gam holds a PhD in Environmental and Resource
+              Management. He is well grounded in Community development.
+            </p>
+            <div class="team-social-icons">
+              <a target="_blank" href="#"><i class="fa fa-facebook"></i></a>
+              <a target="_blank" href="#"><i class="fa fa-linkedin"></i></a>
+              <a target="_blank" href="#"><i class="fa fa-twitter"></i></a>
+            </div>
+            <!--/ social-icons-->
+          </div>
+        </div>
+        <!--/ Team wrapper 3 end -->
+      </div>
+      <!-- Col end -->
+
+      <div class="col-md-4">
+        <div class="ts-team-wrapper">
+          <div class="team-img-wrapper">
+            <img alt="" src="{% static 'frontend/images/team/avatar.png' %}" class="img-responsive" />
+          </div>
+          <div class="ts-team-content-classic">
+            <h3 class="ts-name">Ms. Nneka Toro-Ojo Ikoro</h3>
+            <p class="ts-designation">Director of Administration</p>
+            <p class="ts-description">
+              Ms. Nneka Toro-Ojo Ikoro is a Director in the Rivers State
+              Ministry of Agriculture.
+            </p>
+            <div class="team-social-icons">
+              <a target="_blank" href="#"><i class="fa fa-facebook"></i></a>
+              <a target="_blank" href="#"><i class="fa fa-linkedin"></i></a>
+              <a target="_blank" href="#"><i class="fa fa-twitter"></i></a>
+            </div>
+            <!--/ social-icons-->
+          </div>
+        </div>
+        <!--/ Team wrapper 4 end -->
+      </div>
+      <!-- Col end -->
+
+      <div class="col-md-4">
+        <div class="ts-team-wrapper">
+          <div class="team-img-wrapper">
+            <img alt="" src="{% static 'frontend/images/team/avatar.png' %}" class="img-responsive" />
+          </div>
+          <div class="ts-team-content-classic">
+            <h3 class="ts-name">Emma. Ajayi</h3>
+            <p class="ts-designation">Member Board of Trustees</p>
+            <p class="ts-description">
+              He successfully led Syngenta Nigeria Limited in its turn around
+              synthesis in 2005. He is a technocrat to the core and combines it
+              with sterling leadership qualities.<br />
+
+              He provides the overall strategic leadership direction for the
+              company ensuring that business objectives, vision and mission are
+              executed and achieved as planned. He has direct specific
+              responsibility for the Agribusiness, Finance and Management
+              aspects apart from his general overall accountabilities.
+            </p>
+            <div class="team-social-icons">
+              <a target="_blank" href="#"><i class="fa fa-facebook"></i></a>
+              <a target="_blank" href="#"><i class="fa fa-linkedin"></i></a>
+              <a target="_blank" href="#"><i class="fa fa-twitter"></i></a>
+            </div>
+            <!--/ social-icons-->
+          </div>
+        </div>
+        <!--/ Team wrapper 5 end -->
+      </div>
+    </div>
+    <!-- Content row end -->
+  </div>
+  <!-- Container end -->
+</section>
+<!-- Main container end -->
+{% endblock content %}

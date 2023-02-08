@@ -1,0 +1,30 @@
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+  padding: 0 16px;
+}
+
+#image-filter {
+  padding: 64px 0;
+}
+.title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.filters {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.filters span {
+    margin-right: 2px;
+    padding: 12px 26px;
+    border-radius: 24px;
+    background: #efefef;
+    border: 2px solid #eee;
+}

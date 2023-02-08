@@ -1,0 +1,24 @@
+version: "3.8"
+
+services:
+  app:
+    build: .
+    container_name: agri_container
+    volumes:
+      - .:/agri_django
+    ports:
+      - "8000:8000"
+    image: app:agri_django
+    command: python manage.py runserver 0.0.0.0:8000
+    depends_on:
+      - pgdb
+
+  pgdb:
+    image: postgres
+    container_name: postgres_db
+    volumes:
+      - ./data/pgdb:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=agri_db
+      - POSTGRES_USER=agri_user
+      - POSTGRES_PASSWORD=okAnani
